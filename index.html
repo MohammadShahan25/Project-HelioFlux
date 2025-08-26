@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelioFlux - Sustainable Energy Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" 
+                    <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" stroke="#FFD700" stroke-width="2"/>
+                    <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="#1E3A8A"/>
+                    <circle cx="20" cy="20" r="4" fill="#FFD700"/>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.3"/>
+                            <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.7"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Project HelioFlux</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#problem" class="nav-link">Problem</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#solution" class="nav-link">Solution</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#case-study" class="nav-link">Case Study</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#model" class="nav-link">3D Model</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#materials" class="nav-link">Materials Used</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#video" class="nav-link">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Team</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="solar-particles"></div>
+            <div class="energy-waves"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Revolutionizing</span>
+                    <span class="hero-title-line">Sustainable Energy</span>
+                    <span class="hero-title-highlight">with HelioFlux</span>
+                </h1>
+                <p class="hero-description">
+                    Thermoelectric technology that converts temperature differences into clean, efficient energy.
+                    Making renewable power accessible, affordable, and extraordinary.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">349 AED</div>
+                        <div class="stat-label">Starting Price</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">22.7 kWh</div>
+                        <div class="stat-label">Daily Output (as per case study)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">174 AED</div>
+                        <div class="stat-label">Manufacturing Cost</div>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('solution')">
+                    Discover the Solution
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Energy Crisis</h2>
+                <p class="section-subtitle">Understanding the challenges we face today</p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-stats">
+                    <div class="problem-stat">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-text">
+                            <h3>Rising Energy Demands</h3>
+                            <p>Global energy consumption increases exponentially while fossil fuel reserves diminish</p>
+                        </div>
+                    </div>
+                    <div class="problem-stat">
+                        <div class="stat-icon">🌍</div>
+                        <div class="stat-text">
+                            <h3>Environmental Impact</h3>
+                            <p>Fossil fuel dependency causes severe climate change and environmental degradation</p>
+                        </div>
+                    </div>
+                    <div class="problem-stat">
+                        <div class="stat-icon">📉</div>
+                        <div class="stat-text">
+                            <h3>Solar Inefficiency</h3>
+                            <p>Traditional solar systems lose efficiency due to static positioning and poor distribution</p>
+                        </div>
+                    </div>
+                    <div class="problem-stat">
+                        <div class="stat-icon">🏘️</div>
+                        <div class="stat-text">
+                            <h3>Limited Access</h3>
+                            <p>Remote communities lack consistent and affordable renewable energy solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-visual">
+                    <div class="energy-crisis-chart">
+                        <div class="chart-bar" data-percentage="85">
+                            <div class="bar-fill"></div>
+                            <span class="bar-label">Fossil Fuel Dependency</span>
+                        </div>
+                        <div class="chart-bar" data-percentage="45">
+                            <div class="bar-fill"></div>
+                            <span class="bar-label">Solar Panel Efficiency Loss</span>
+                        </div>
+                        <div class="chart-bar" data-percentage="65">
+                            <div class="bar-fill"></div>
+                            <span class="bar-label">Energy Access Gap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section solution-section" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The HelioFlux Solution</h2>
+                
+            </div>
+            <div class="solution-content">
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <rect x="10" y="20" width="40" height="20" rx="4" fill="#FFD700" opacity="0.3"/>
+                                <rect x="15" y="25" width="30" height="10" rx="2" fill="#1E3A8A"/>
+                                <circle cx="30" cy="30" r="3" fill="#10B981"/>
+                                <path d="M25 15L30 10L35 15" stroke="#FFD700" stroke-width="2"/>
+                                <path d="M25 45L30 50L35 45" stroke="#FFD700" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Thermoelectric Technology</h3>
+                        <p>Utilizes advanced Peltier modules (TEC1-12706) to convert temperature differences into electrical energy with maximum efficiency</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <rect x="15" y="15" width="30" height="30" rx="6" stroke="#1E3A8A" stroke-width="2" fill="none"/>
+                                <rect x="20" y="20" width="20" height="20" rx="4" fill="#10B981" opacity="0.3"/>
+                                <path d="M25 35L30 30L35 35" stroke="#FFD700" stroke-width="2"/>
+                                <circle cx="30" cy="25" r="2" fill="#FFD700"/>
+                            </svg>
+                        </div>
+                        <h3>Smart Energy Distribution</h3>
+                        <p>Integrated DC-DC Boost Converters (MT3608/LM2577) ensure optimal power conversion and distribution</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <rect x="20" y="10" width="20" height="40" rx="4" fill="#1E3A8A" opacity="0.3"/>
+                                <rect x="25" y="15" width="10" height="30" rx="2" fill="#10B981"/>
+                                <path d="M15 25H45" stroke="#FFD700" stroke-width="2"/>
+                                <circle cx="15" cy="25" r="3" fill="#FFD700"/>
+                                <circle cx="45" cy="25" r="3" fill="#FFD700"/>
+                            </svg>
+                        </div>
+                        <h3>Durable Design</h3>
+                        <p>Housed in brushed stainless steel with cooling systems, heatsinks, and thermal management</p>
+                    </div>
+                </div>
+               
+                <div class="pricing-section">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Flux Unit</h3>
+                            <div class="price">
+                                <span class="currency">AED</span>
+                                <span class="amount">349</span>
+                                <span class="period">per unit</span>
+                            </div>
+                        </div>
+                        <div class="pricing-details">
+                            <div class="cost-breakdown">
+                                <div class="cost-item">
+                                    <span>Manufacturing Cost:</span>
+                                    <span>174 AED</span>
+                                </div>
+                                <div class="cost-item">
+                                    <span>Setup Fee:</span>
+                                    <span>50 AED</span>
+                                </div>
+                                <div class="cost-item highlight">
+                                    <span>Bulk Discount (10+ units):</span>
+                                    <span>10% off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="maintenance-plans">
+                        <h4>Maintenance Options</h4>
+                        <div class="maintenance-options">
+                            <div class="maintenance-option">
+                                <div class="option-header">
+                                    <h5>Monthly Plan</h5>
+                                    <span class="option-price">150 AED upfront</span>
+                                </div>
+                                <p>Free monthly checkups</p>
+                            </div>
+                            <div class="maintenance-option">
+                                <div class="option-header">
+                                    <h5>Standard Plan</h5>
+                                    <span class="option-price">50 AED per visit</span>
+                                </div>
+                                <p>Free maintenance every 3 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Calculator Section -->
+
+
+    <!-- Case Study Section -->
+    <section class="section case-study-section" id="case-study">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real-World Application</h2>
+                <p class="section-subtitle">Small City Zebra Crossings Case Study</p>
+            </div>
+            <div class="case-study-content">
+                <div class="study-overview">
+                    <div class="study-stats">
+                        <div class="study-stat stat-item">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">Zebra Crossings</div>
+                        </div>
+                        <div class="study-stat stat-item">
+                            <div class="stat-number">100</div>
+                            <div class="stat-label">Units Deployed</div>
+                        </div>
+                        <div class="study-stat stat-item">
+                            <div class="stat-number">400000</div>
+                            <div class="stat-label">Cars per Day</div>
+                        </div>
+                        <div class="study-stat stat-item">
+                            <div class="stat-number">22.7 kWh</div>
+                            <div class="stat-label">Daily Output</div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="calculations">
+                    <div class="calc-section">
+                        <h3>Traffic Analysis</h3>
+                        <div class="calc-grid">
+                            <div class="calc-item">
+                                <div class="calc-label">Cars per lane per day:</div>
+                                <div class="calc-value">400,000 ÷ 3 = 133,333</div>
+                            </div>
+                            <div class="calc-item">
+                                <div class="calc-label">Hit probability (calculated based on lane width 3.5 m, tire width 0.25 m and unit width 100 mm):</div>
+                                <div class="calc-value">11.36%</div>
+                            </div>
+                            <div class="calc-item">
+                                <div class="calc-label">Cars hitting units (2 lanes):</div>
+                                <div class="calc-value">30,290 cars/day</div>
+                            </div>
+                            <div class="calc-item">
+                                <div class="calc-label">Total tire hits:</div>
+                                <div class="calc-value">60,580 hits/day</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="calc-section">
+                        <h3>Energy Output</h3>
+                        <div class="energy-breakdown">
+                            <div class="energy-source">
+                                <div class="source-icon">🚗</div>
+                                <div class="source-details">
+                                    <h4>Friction Energy</h4>
+                                    <p>0.3 Wh per tire hit</p>
+                                    <div class="energy-value">18.17 kWh/day</div>
+                                </div>
+                            </div>
+                            <div class="energy-plus">+</div>
+                            <div class="energy-source">
+                                <div class="source-icon">☀️</div>
+                                <div class="source-details">
+                                    <h4>Solar Gain</h4>
+                                    <p>25% additional output</p>
+                                    <div class="energy-value">4.54 kWh/day</div>
+                                </div>
+                            </div>
+                            <div class="energy-equals">=</div>
+                            <div class="energy-total">
+                                <h4>Total Output</h4>
+                                <div class="total-value">22.7 kWh/day</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="comparison">
+                    <h3>Cost Comparison</h3>
+                    <div class="comparison-cards">
+                        <div class="comparison-card helioflux">
+                            <div class="card-header">
+                                <h4>HelioFlux System</h4>
+                                <div class="card-icon">⚡</div>
+                            </div>
+                            <div class="card-details">
+                                <div class="detail-item">
+                                    <span>Initial Cost:</span>
+                                    <span>31,460 AED</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span>Daily Output:</span>
+                                    <span>22.7 kWh</span>
+                                </div>
+                                <div 
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="vs-divider">VS</div>
+                       
+                        <div class="comparison-card solar">
+                            <div class="card-header">
+                                <h4>15kW Solar System</h4>
+                                <div class="card-icon">☀️</div>
+                            </div>
+                            <div class="card-details">
+                                <div class="detail-item">
+                                    <span>Initial Cost:</span>
+                                    <span>44,000-88,000 AED</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span>Daily Output:</span>
+                                    <span>~15 kWh</span>
+                                </div>
+                                <div 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Model Section -->
+    <section class="section model-section" id="model">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactive 3D Model</h2>
+                <p class="section-subtitle">Explore the HelioFlux unit</p>
+            </div>
+            <div class="model-content">
+                <div class="model-container" id="modelContainer">
+                    <div class="model-3d" id="model3d">
+                        <!-- Component layers from top to bottom -->
+                       
+                        <!-- Top: Brushed Stainless Steel Sheet -->
+                        <div class="component top-steel" data-component="Brushed Stainless Steel Sheet">
+                            <div class="component-surface steel-surface"></div>
+                            <div class="component-sides">
+                                <div class="side front"></div>
+                                <div class="side back"></div>
+                                <div class="side left"></div>
+                                <div class="side right"></div>
+                            </div>
+                        </div>
+                       
+                        <!-- Spring Steel Platform -->
+                        <div class="component spring-platform" data-component="Spring Steel Platform">
+                            <div class="component-surface platform-surface"></div>
+                            <div class="component-sides">
+                                <div class="side front"></div>
+                                <div class="side back"></div>
+                                <div class="side left"></div>
+                                <div class="side right"></div>
+                            </div>
+                        </div>
+                       
+                        <!-- Thermal Paste Layer (thin) -->
+                        <div class="component thermal-paste" data-component="Thermal Grizzly Aeronaut Paste">
+                            <div class="component-surface paste-surface"></div>
+                        </div>
+                       
+                        <!-- TEC1-12706 Thermoelectric Cooler -->
+                        <div class="component tec-cooler" data-component="TEC1-12706 Thermoelectric Cooler">
+                            <div class="component-surface tec-surface">
+                                <div class="tec-grid">
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                    <div class="tec-cell"></div>
+                                </div>
+                            </div>
+                            <div class="component-sides">
+                                <div class="side front"></div>
+                                <div class="side back"></div>
+                                <div class="side left"></div>
+                                <div class="side right"></div>
+                            </div>
+                        </div>
+                       
+                        <!-- Aluminum Heat Sinks -->
+                        <div class="component heat-sink" data-component="Aluminum Heat Sinks">
+                            <div class="component-surface heatsink-surface">
+                                <div class="heatsink-fins">
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                    <div class="fin"></div>
+                                </div>
+                            </div>
+                            <div class="component-sides">
+                                <div class="side front"></div>
+                                <div class="side back"></div>
+                                <div class="side left"></div>
+                                <div class="side right"></div>
+                            </div>
+                        </div>
+                       
+                        <!-- 40mm Cooling Fan -->
+                        <div class="component cooling-fan" data-component="40mm Cooling Fan">
+                            <div class="component-surface fan-surface">
+                                <div class="fan-blades">
+                                    <div class="blade blade-1"></div>
+                                    <div class="blade blade-2"></div>
+                                    <div class="blade blade-3"></div>
+                                    <div class="blade blade-4"></div>
+                                </div>
+                                <div class="fan-center"></div>
+                            </div>
+                            <div class="foam-padding"></div>
+                        </div>
+                       
+                        <!-- DC-DC Boost Converter -->
+                        <div class="component boost-converter" data-component="MT3608 LM2577 DC-DC Boost Converter">
+                            <div class="component-surface converter-surface">
+                                <div class="pcb-components">
+                                    <div class="component-chip main-chip"></div>
+                                    <div class="component-chip capacitor"></div>
+                                    <div class="component-chip resistor"></div>
+                                    <div class="component-chip inductor"></div>
+                                </div>
+                            </div>
+                            <div class="component-sides">
+                                <div class="side front"></div>
+                                <div class="side back"></div>
+                                <div class="side left"></div>
+                                <div class="side right"></div>
+                            </div>
+                        </div>
+                       
+                        <!-- Schottky Barrier Rectifiers -->
+                        <div class="component rectifiers" data-component="1N5819 Schottky Barrier Rectifiers">
+                            <div class="component-surface rectifier-surface">
+                                <div class="diodes">
+                                    <div class="diode"></div>
+                                    <div class="diode"></div>
+                                    <div class="diode"></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Connection Text Box -->
+                        <div class="component connection-box" data-component="User Device Connections">
+                            <div class="connection-text">
+                                <p>Electrician connects any number of items the user wants to connect here</p>
+                                <div class="connection-ports">
+                                    <div class="port"></div>
+                                    <div class="port"></div>
+                                    <div class="port"></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Wiring -->
+                        <div class="wiring">
+                            <div class="wire wire-1"></div>
+                            <div class="wire wire-2"></div>
+                            <div class="wire wire-3"></div>
+                        </div>
+                    </div>
+                   
+                    <!-- Component Selection Panel -->
+                    <div class="component-selector" id="componentSelector">
+                        <h3>List of Components</h3>
+                        <div class="component-buttons">
+                            <button class="component-btn" data-component="Brushed Stainless Steel Sheet">Steel Sheet</button>
+                            <button class="component-btn" data-component="Spring Steel Platform">Spring Platform</button>
+                            <button class="component-btn" data-component="Thermal Grizzly Aeronaut Paste">Thermal Paste</button>
+                            <button class="component-btn" data-component="TEC1-12706 Thermoelectric Cooler">TEC1-12706</button>
+                            <button class="component-btn" data-component="Aluminum Heat Sinks">Heat Sinks</button>
+                            <button class="component-btn" data-component="40mm Cooling Fan">Cooling Fan</button>
+                            <button class="component-btn" data-component="MT3608 LM2577 DC-DC Boost Converter">DC Converter</button>
+                            <button class="component-btn" data-component="1N5819 Schottky Barrier Rectifiers">Rectifiers</button>
+                            <button class="component-btn" data-component="User Device Connections">Connections</button>
+                        </div>
+                        <div class="component-info" id="componentInfo">
+                            <h4 
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Model Controls -->
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Materials Section -->
+    <section class="section materials-section" id="materials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Components</h2>
+                <p class="section-subtitle">High-quality materials sourced from Amazon.ae</p>
+            </div>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>MT3608 LM2577 DC-DC Boost Converter</h3>
+                        <div class="material-price">AED 38.00</div>
+                    </div>
+                    <p>10Pcs Voltage Regulator Step Up Power Supply Module with Micro USB 2A 2V-24V to 5V-28V</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Hook up Wire Kit</h3>
+                        <div class="material-price">AED 74.51</div>
+                    </div>
+                    <p>20 Gauge Flexible Silicone Rubber Electric Wire - 6 Colors, 19.6 feet Each (20 AWG)</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Spring Steel Platform</h3>
+                        <div class="material-price">AED 25.74</div>
+                    </div>
+                    <p>Flexible Build Plate Surface with Magnetic Base - 135x75mm Silver</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Thermal Grizzly Aeronaut</h3>
+                        <div class="material-price">AED 16.50</div>
+                    </div>
+                    <p>1 Gram High Performance Thermal Paste - Ideal Entry Level Thermal Paste</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Brushed Stainless Steel Sheet</h3>
+                        <div class="material-price">AED 29.99</div>
+                    </div>
+                    <p>304 Grade Stainless Steel Sheet - 100mm x 100mm, 1mm Thick</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Schottky Barrier Rectifiers</h3>
+                        <div class="material-price">AED 31.05</div>
+                    </div>
+                    <p>40 Pcs 1N5819 DO-41 Schottky Barrier Rectifiers Diodes - 40V 1A</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>40mm Cooling Fans</h3>
+                        <div class="material-price">AED 37.58</div>
+                    </div>
+                    <p>2Pcs 5V 3D Printer Micro Fans - 40mm x 10mm 2PIN, 5000 RPM, 0.15A</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>Aluminum Heat Sinks</h3>
+                        <div class="material-price">AED 27.89</div>
+                    </div>
+                    <p>5Pcs Aluminum Heat Sinks - 40x20x40mm Cooler Fin Heatsink Module (Silver)</p>
+                </div>
+               
+                <div class="material-card">
+                    <div class="material-header">
+                        <h3>TEC1-12706 Thermoelectric Cooler</h3>
+                        <div class="material-price">AED 32.00</div>
+                    </div>
+                    <p>Thermoelectric Cooler Peltier Modules - 3 pieces per pack</p>
+                </div>
+            </div>
+           
+            <div class="materials-summary">
+                <div class="summary-card">
+                    <h3>Total Components Cost</h3>
+                    <div class="total-cost">124 AED</div>
+                    <p>Complete bill of materials for one HelioFlux unit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+  <section id="video">
+  <div style="width:100%; max-width:100%; margin:0 auto;">
+    <h2 style="text-align:center;">Demo Video</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/kYkmQDlWoSM?si=5tn05oEBdTH1imDX" 
+      title="HelioFlux Demo Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+      style="width:100%; height:60vh; display:block; margin:0 auto;">
+    </iframe>
+  </div>
+</section>
+
+
+
+    <!-- Team Section -->
+    <section class="section team-section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-subtitle">The innovators behind Project HelioFlux</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#memberGradient1)" stroke="#FFD700" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="15" fill="#1E3A8A"/>
+                                <path d="M25 75C25 65 35 55 50 55C65 55 75 65 75 75" stroke="#1E3A8A" stroke-width="4" fill="none"/>
+                                <defs>
+                                    <linearGradient id="memberGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.1"/>
+                                        <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mohammad Shahan Khan</h3>
+                        <p class="member-role">Project Leader</p>
+                        <p class="member-description">Creator of the HelioFlux concept, developed the website and overall project structure</p>
+                    </div>
+                </div>
+               
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#memberGradient2)" stroke="#10B981" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="15" fill="#1E3A8A"/>
+                                <path d="M25 75C25 65 35 55 50 55C65 55 75 65 75 75" stroke="#1E3A8A" stroke-width="4" fill="none"/>
+                                <defs>
+                                    <linearGradient id="memberGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.1"/>
+                                        <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Ehan Ismail Kannangara Chaluvaru</h3>
+                        <p class="member-role">Product Developer</p>
+                        <p class="member-description">Refined the initial concept, found materials and parts, and co-built the first working prototype</p>
+                    </div>
+                </div>
+               
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#memberGradient3)" stroke="#F59E0B" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="15" fill="#1E3A8A"/>
+                                <path d="M25 75C25 65 35 55 50 55C65 55 75 65 75 75" stroke="#1E3A8A" stroke-width="4" fill="none"/>
+                                <defs>
+                                    <linearGradient id="memberGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:0.1"/>
+                                        <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Hamdan Naseer Narukkan Chira</h3>
+                        <p class="member-role">Analyst</p>
+                        <p class="member-description">Provided critical questioning to identify flaws and assisted in filming and documenting the project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" 
+                        <circle cx="15" cy="15" r="13" fill="url(#footerGradient)" stroke="#FFD700" stroke-width="1.5"/>
+                        <path d="M9 15L15 9L21 15L15 21L9 15Z" fill="#1E3A8A"/>
+                        <circle cx="15" cy="15" r="3" fill="#FFD700"/>
+                        <defs>
+                            <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.2"/>
+                                <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0.5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>Project HelioFlux</span>
+                </div>
+                <div class="footer-text">
+                    Made by Team HelioFlux
+                </div>
+                <div class="footer-year">
+                    © 2025 All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
